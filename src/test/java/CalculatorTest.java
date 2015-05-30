@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class CalculatorTest {
 	
-	private src.main.java.Calculator cal;
+	private Calculator cal;
 
 	@Before
 	public void setUp() throws Exception {
