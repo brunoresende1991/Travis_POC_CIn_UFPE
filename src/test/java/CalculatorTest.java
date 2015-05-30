@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class CalculatorTest {
 	
-	private Calculator cal;
+	private src.main.java.Calculator cal;
 
 	@Before
 	public void setUp() throws Exception {
@@ -36,13 +36,18 @@ public class CalculatorTest {
 		cal.sub(50);
 		assertTrue(cal.getCurrentResult() == -50);
 		cal.sub(50);
-		//There is an intencional bug onto this test
-		assertTrue(cal.getCurrentResult() == 100);
+		assertTrue(cal.getCurrentResult() == -100);
 	}
 
 	@Test
 	public void testMult() {
-		fail("Not yet implemented");
+		this.cal = new Calculator(new CalculatorView(),1.0);
+		cal.mult(50);
+		assertTrue(cal.getCurrentResult() == 50);
+		cal.mult(-1);
+		assertTrue(cal.getCurrentResult() == -50);
+		cal.mult(0);
+		assertTrue(cal.getCurrentResult() == 0);
 	}
 
 	@Test

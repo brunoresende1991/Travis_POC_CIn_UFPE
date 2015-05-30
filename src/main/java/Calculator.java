@@ -9,10 +9,6 @@ public class Calculator {
 		this.view = view;
 		this.currentResult = new Double(0);
 	}
-
-	public static void main(String[] args) {
-	    System.out.println("It ran ok!");
-	}
 	
 	public Calculator(CalculatorView view, Double currentResult){
 		this.view = view;
@@ -48,6 +44,12 @@ public class Calculator {
 	}
 	
 	public void integerDiv(Integer x){
+		
+		if(x == 0){
+			this.div(x);
+			return;
+		}
+		
 		Integer integerCurrentResult = this.currentResult.intValue();
 		view.print(integerCurrentResult + " / " + x + " = ");
 		integerCurrentResult /= x;
