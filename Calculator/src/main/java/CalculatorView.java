@@ -1,4 +1,4 @@
-package calculator;
+package main.java;
 
 public class CalculatorView {
 
@@ -8,3 +8,4 @@ public class CalculatorView {
 	}
 
 }
+

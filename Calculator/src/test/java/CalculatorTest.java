@@ -1,17 +1,14 @@
-package tests;
+package test.java;
 
 import static org.junit.Assert.*;
-import junit.framework.Assert;
+import main.java.Calculator;
+import main.java.CalculatorView;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import calculator.Calculator;
-import calculator.CalculatorView;
-import calculator.IntegerCalculator;
-
-public class CalculatorTests {
+public class CalculatorTest {
 	
 	private Calculator cal;
 
@@ -69,3 +66,4 @@ public class CalculatorTests {
 	}
 
 }
+

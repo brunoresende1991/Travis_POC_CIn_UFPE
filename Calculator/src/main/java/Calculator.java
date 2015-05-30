@@ -1,4 +1,4 @@
-package calculator;
+package main.java;
 
 public class Calculator {
 
@@ -8,6 +8,10 @@ public class Calculator {
 	public Calculator(CalculatorView view){
 		this.view = view;
 		this.currentResult = new Double(0);
+	}
+
+	public static void main(String[] args) {
+	    System.out.println("It ran ok!");
 	}
 	
 	public Calculator(CalculatorView view, Double currentResult){
@@ -52,3 +56,4 @@ public class Calculator {
 	}
 	
 }
+
