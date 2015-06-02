@@ -45,7 +45,10 @@ public class CalculatorTests {
 
 	@Test
 	public void testMult() {
-		fail("Not yet implemented");
+		this.cal = new Calculator(new CalculatorView(), 10.0);
+		assertTrue(cal.getCurrentResult() == 10);
+		cal.mul(3);
+		assertTrue(cal.getCurrentResult() == 30);
 	}
 
 	@Test
